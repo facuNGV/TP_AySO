@@ -1,0 +1,121 @@
+ls
+whoami
+pwd
+echo "hola"
+cd repogit
+ls
+git clone https://github.com/facuNGV/repo_gasparrini.git
+ls
+cd repo_gasparrini/
+ls
+history
+history > historial.txt
+ls
+git status
+git add .
+git status
+git commit -m "mi primer commit"
+git config --global user.email "facu_nicogas@outlook.com"
+git commit -m "mi primer commit"
+git status
+git push
+exit
+pwd
+ls
+cd repogit
+pwd
+ls
+cd ..
+pwd
+ssh-keygen -t ed25516
+ssh-keygen -t ed25519
+ls -l
+ls -la
+cd .ssh
+ls -l
+cat id_ed25519.pub 
+cd ..
+ls -l
+cd repogit
+ls -l
+rm -r repo_gasparrini/
+sudo rm -r repo_gasparrini/
+ls -l
+pwd
+git clone git@github.com:facuNGV/repo_gasparrini.git
+ls
+cd repo_gasparrini/
+echo "hola"> hola.txt
+ls
+git status
+git add .
+git commit -m "primer commit"
+git status
+git push
+cat /etc/passwd
+head /etc/passwd
+head -n /etc/passwd
+head -n2 /etc/passwd
+tail /etc/passwd
+grep bash /etc/passwd
+grep bash /etc/passwd > archivo2.txt
+ls -l
+sort archivo2.txt
+exit
+ls -la
+cd repogit
+ls
+ls -la
+git clone git@github.com:facuNGV/TP_AySO.git
+ls
+cd TP_AySO/
+pwd
+ls -l
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i Home_url /etc/os-release
+whoami
+echo “usuario:$(whoami)” > datos_usuario.txt
+cat datos_usuario.txt
+git add .
+git commit -m "agregado 1er ejercicio
+sobre datos_usuarios.txt"
+git status
+cat /proc/cpuinfo/
+c
+grep -i "model name" /proc/cpuinfo
+head /proc/cpuinfo | grep -i "model name"
+grep /proc/cpuinfo | grep -i "model name"
+grep -i "model name" /proc/cpuinfo | head -n1
+head n1 /proc/cpuinfo
+head -n1 /proc/cpuinfo
+grep -i "model name" /proc/cpuinfo | head -n1
+grep -i "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+cat datos_usuario.txt
+git add .
+git commit -m "feat: Añadiendo información de CPU"
+git status
+grep -v nologin /etc/passwd
+grep -v nologin /etc/passwd | sort -t":" -k7
+grep -v nologin /etc/passwd | sort -t":" -k7 > lista_ordenada.txt
+cat lista_ordenada.txt
+git add .
+git commit -m "Listado de usuarios ordenada"
+apropos "dump traffic"
+apropos "dump traffic" > comando_dump_net.txt
+echo apropos "dump traffic" >> comando_dump_net.txt 
+cat comando_dump_net.txt 
+git add .
+git commit -m "Comando para Capturar y analizar el tráfico de red"
+ls
+cat << FIN >> README.md
+Alumno: Facundo Gasparrini
+División: 311
+Turno: Noche
+FIN
+
+git add .
+git commit -m "Final del trabajo practico AySO"
+history -a $HOME/.bash_history
